@@ -50,5 +50,61 @@ public class LibroEntidad {
         this.clasificacion = clasificacion;
         this.signatura = signatura;
     }
+
+    public Long getIdLibro() {
+        return idLibro;
+    }
+
+    public String[] getAutor() {
+        return Autor;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public EdicionEnum getEdicion() {
+        return edicion;
+    }
+
+    public String getLugarPublicacion() {
+        return lugarPublicacion;
+    }
+
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public Integer getAnoPublicacion() {
+        return anoPublicacion;
+    }
+
+    public Descripcion getDescripcion() {
+        return descripcion;
+    }
+
+    public Coleccion getColeccion() {
+        return coleccion;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getDepositoLegal() {
+        return depositoLegal;
+    }
+
+    public String getMaterias() {
+        return materias;
+    }
+
+    public String getClasificacion() {
+        return clasificacion;
+    }
+
+    public Signatura getSignatura() {
+        return signatura;
+    }
 }
 
