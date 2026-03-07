@@ -4,6 +4,7 @@ import org.DavidParada.controlador.UsuarioControlador;
 import org.DavidParada.excepcion.ValidationException;
 import org.DavidParada.modelo.enums.EstadoCuentaEnum;
 import org.DavidParada.modelo.enums.PaisEnum;
+import org.DavidParada.modelo.enums.TipoDeCuentaEnum;
 import org.DavidParada.modelo.formulario.UsuarioForm;
 import org.DavidParada.vista.componente.BotonPrincipal;
 import org.DavidParada.vista.componente.BotonSecundario;
@@ -75,18 +76,16 @@ public class PanelRegistro extends JPanel {
                 e -> {
                     try {
 
-                        UsuarioForm form = new UsuarioForm(
-                                txtUsuario.getText(),
-                                txtEmail.getText(),
-                                new String(txtPassword.getPassword()),
-                                txtNombreReal.getText(),
-                                (PaisEnum) comboPais.getSelectedItem(),
-                                LocalDate.parse(txtFechaNacimiento.getText()),
-                                Instant.now(),
-                                null,
-                                0.0,
-                                EstadoCuentaEnum.ACTIVA
-                        );
+//                        UsuarioForm form = new UsuarioForm(
+//                                txtUsuario.getText(),
+//                                txtEmail.getText(),
+//                                new String(txtPassword.getPassword()),
+//                                (PaisEnum) comboPais.getSelectedItem(),
+//                                LocalDate.parse(txtFechaNacimiento.getText()),
+//                                Instant.now(),
+//                                null,
+//                                TipoDeCuentaEnum.USUARIO
+//                        );
 
                         usuarioControlador.registrarUsuario(form);
 

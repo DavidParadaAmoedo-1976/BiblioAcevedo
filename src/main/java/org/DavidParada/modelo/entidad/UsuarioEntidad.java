@@ -15,7 +15,7 @@ public class UsuarioEntidad {
     private LocalDate fechaNacimiento;
     private Instant fechaRegistro;
     private String avatar;
-    private TipoDeCuentaEnum estadoCuenta;
+    private TipoDeCuentaEnum tipoDeCuentaEnum;
 
     public UsuarioEntidad(Long idUsuario,
                           String nombreUsuario,
@@ -25,7 +25,7 @@ public class UsuarioEntidad {
                           LocalDate fechaNacimiento,
                           Instant fechaRegistro,
                           String avatar,
-                          TipoDeCuentaEnum estadoCuenta) {
+                          TipoDeCuentaEnum tipoDeCuentaEnum) {
 
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
@@ -35,7 +35,7 @@ public class UsuarioEntidad {
         this.fechaNacimiento = fechaNacimiento;
         this.fechaRegistro = fechaRegistro;
         this.avatar = avatar;
-        this.estadoCuenta = estadoCuenta;
+        this.tipoDeCuentaEnum = tipoDeCuentaEnum;
     }
 
     public UsuarioEntidad() {
@@ -73,7 +73,7 @@ public class UsuarioEntidad {
         return avatar;
     }
 
-    public TipoDeCuentaEnum getEstadoCuenta() {
-        return estadoCuenta;
+    public TipoDeCuentaEnum getTipoDeCuentaEnum() {
+        return tipoDeCuentaEnum;
     }
 }

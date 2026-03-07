@@ -1,8 +1,8 @@
 package org.DavidParada.modelo.formulario;
 
 import org.DavidParada.modelo.entidad.Coleccion;
-import org.DavidParada.modelo.entidad.Descripcion;
-import org.DavidParada.modelo.entidad.Signatura;
+import org.DavidParada.modelo.entidad.objetos.Descripcion;
+import org.DavidParada.modelo.entidad.objetos.Signatura;
 import org.DavidParada.modelo.enums.EdicionEnum;
 
 public class LibroForm {

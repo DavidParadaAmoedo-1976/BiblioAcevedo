@@ -1,5 +1,7 @@
 package org.DavidParada.modelo.entidad;
 
+import org.DavidParada.modelo.entidad.objetos.Descripcion;
+import org.DavidParada.modelo.entidad.objetos.Signatura;
 import org.DavidParada.modelo.enums.EdicionEnum;
 
 public class LibroEntidad {
