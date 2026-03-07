@@ -5,8 +5,10 @@ import org.DavidParada.modelo.entidad.objetos.Descripcion;
 import org.DavidParada.modelo.entidad.objetos.Signatura;
 import org.DavidParada.modelo.enums.EdicionEnum;
 
+import java.util.List;
+
 public class LibroForm {
-    private String[] autor;
+    private List<String> autor;
     private String titulo;
     private EdicionEnum edicion;
     private String lugarPublicacion;
@@ -48,7 +50,7 @@ public class LibroForm {
         this.signatura = signatura;
     }
 
-    public String[] getAutor() {
+    public List<String> getAutor() {
         return autor;
     }
 

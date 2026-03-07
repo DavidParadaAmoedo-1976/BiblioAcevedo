@@ -7,18 +7,20 @@ import java.time.Instant;
 import java.time.LocalDate;
 
 public class UsuarioEntidad {
-    private Long idUsuario;
-    private String nombreUsuario;
-    private String email;
-    private String password;
-    private PaisEnum pais;
-    private LocalDate fechaNacimiento;
-    private Instant fechaRegistro;
-    private String avatar;
-    private TipoDeCuentaEnum tipoDeCuentaEnum;
+    private final Long idUsuario;
+    private final String nombreUsuario;
+    private final String nombreReal;
+    private final String email;
+    private final String password;
+    private final PaisEnum pais;
+    private final LocalDate fechaNacimiento;
+    private final Instant fechaRegistro;
+    private final String avatar;
+    private final TipoDeCuentaEnum tipoDeCuentaEnum;
 
     public UsuarioEntidad(Long idUsuario,
                           String nombreUsuario,
+                          String nombreReal,
                           String email,
                           String password,
                           PaisEnum pais,
@@ -29,6 +31,7 @@ public class UsuarioEntidad {
 
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
+        this.nombreReal = nombreReal;
         this.email = email;
         this.password = password;
         this.pais = pais;
@@ -38,15 +41,16 @@ public class UsuarioEntidad {
         this.tipoDeCuentaEnum = tipoDeCuentaEnum;
     }
 
-    public UsuarioEntidad() {
-    }
-
     public Long getIdUsuario() {
         return idUsuario;
     }
 
     public String getNombreUsuario() {
         return nombreUsuario;
+    }
+
+    public String getNombreReal() {
+        return nombreReal;
     }
 
     public String getEmail() {

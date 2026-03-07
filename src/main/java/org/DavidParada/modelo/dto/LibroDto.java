@@ -5,8 +5,10 @@ import org.DavidParada.modelo.entidad.objetos.Descripcion;
 import org.DavidParada.modelo.entidad.objetos.Signatura;
 import org.DavidParada.modelo.enums.EdicionEnum;
 
+import java.util.List;
+
 public record LibroDto(Long idLibro,
-                       String[] autor,
+                       List<String> autor,
                        String titulo,
                        EdicionEnum edicion,
                        String lugarPublicacion,

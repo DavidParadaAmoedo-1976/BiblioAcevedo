@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 public class UsuarioForm {
     private String nombreUsuario;
+    private String nombreReal;
     private String email;
     private String password;
     private PaisEnum pais;
@@ -19,6 +20,7 @@ public class UsuarioForm {
     }
 
     public UsuarioForm(String nombreUsuario,
+                       String nombreReal,
                        String email,
                        String password,
                        PaisEnum pais,
@@ -27,6 +29,7 @@ public class UsuarioForm {
                        TipoDeCuentaEnum tipoDeCuentaEnum) {
 
         this.nombreUsuario = nombreUsuario;
+        this.nombreReal = nombreReal;
         this.email = email;
         this.password = password;
         this.pais = pais;
@@ -38,6 +41,10 @@ public class UsuarioForm {
 
     public String getNombreUsuario() {
         return nombreUsuario;
+    }
+
+    public String getNombreReal() {
+        return nombreReal;
     }
 
     public String getEmail() {

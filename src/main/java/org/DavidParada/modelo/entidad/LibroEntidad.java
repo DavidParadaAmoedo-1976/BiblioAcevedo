@@ -4,27 +4,28 @@ import org.DavidParada.modelo.entidad.objetos.Descripcion;
 import org.DavidParada.modelo.entidad.objetos.Signatura;
 import org.DavidParada.modelo.enums.EdicionEnum;
 
-public class LibroEntidad {
-    private Long idLibro;
-    private String[] Autor;
-    private String titulo;
-    private EdicionEnum edicion;
-    private String lugarPublicacion;
-    private String editorial;
-    private Integer anoPublicacion;
-    private Descripcion descripcion;
-    private Coleccion coleccion;
-    private String isbn;
-    private String depositoLegal;
-    private String materias;
-    private String clasificacion;
-    private Signatura signatura;
+import java.util.List;
 
-    public LibroEntidad() {
-    }
+public class LibroEntidad {
+    private final Long idLibro;
+    private final List<String> autor;
+    private final String titulo;
+    private final EdicionEnum edicion;
+    private final String lugarPublicacion;
+    private final String editorial;
+    private final Integer anoPublicacion;
+    private final Descripcion descripcion;
+    private final Coleccion coleccion;
+    private final String isbn;
+    private final String depositoLegal;
+    private final String materiasEnum;
+    private final String clasificacion;
+    private final Signatura signatura;
+    private final String localizacion;
+
 
     public LibroEntidad(Long idLibro,
-                        String[] autor,
+                        List<String> autor,
                         String titulo,
                         EdicionEnum edicion,
                         String lugarPublicacion,
@@ -38,7 +39,7 @@ public class LibroEntidad {
                         String clasificacion,
                         Signatura signatura) {
         this.idLibro = idLibro;
-        Autor = autor;
+        this.autor = autor;
         this.titulo = titulo;
         this.edicion = edicion;
         this.lugarPublicacion = lugarPublicacion;
@@ -57,8 +58,8 @@ public class LibroEntidad {
         return idLibro;
     }
 
-    public String[] getAutor() {
-        return Autor;
+    public List<String> getAutor() {
+        return autor;
     }
 
     public String getTitulo() {
